@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/adabhade13/automobile-configrepo.git
+          default-label: main
+          refresh-rate: 280
+  security:
+    user:
+      name: config1
+      password: server1
+      roles:
+      - admin
